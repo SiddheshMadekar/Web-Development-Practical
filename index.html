@@ -1,0 +1,250 @@
+# index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Practical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+        }
+
+        .student-info {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .student-info div {
+            font-size: 1rem;
+        }
+
+        .student-info span {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        .practical-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(12px);
+            padding: 25px;
+            border-radius: 20px;
+            transition: 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #38bdf8, #0ea5e9);
+            top: 0;
+            left: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+            color: #38bdf8;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: #e2e8f0;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #0ea5e9, #38bdf8);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #38bdf8, #0ea5e9);
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        @media(max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+
+            .student-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Web Development Practical</h1>
+            <p>HTML & CSS Practical Experiments Repository</p>
+        </div>
+
+        <div class="student-info">
+            <div><span>Name:</span> Siddhesh Madekar</div>
+            <div><span>Course:</span> Computer Science Engineering</div>
+            <div><span>College:</span> DYPCET Kolhapur</div>
+        </div>
+
+        <div class="practical-grid">
+
+            <div class="card">
+                <h2>Experiment 02</h2>
+                <p>Basic HTML webpage design and formatting practical.</p>
+                <a href="Exp 02.html" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 03</h2>
+                <p>Implementation of tables, lists and hyperlinks in HTML.</p>
+                <a href="Exp 03.html" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 04</h2>
+                <p>Advanced webpage layout and formatting using CSS.</p>
+                <a href="Exp 04/" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 05</h2>
+                <p>Designing responsive webpages with modern styling.</p>
+                <a href="Exp 05.html" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 06</h2>
+                <p>Implementation of forms and input elements in HTML.</p>
+                <a href="Exp 06.html" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 07</h2>
+                <p>Practical based on multimedia and webpage structure.</p>
+                <a href="Exp 07.html" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 08</h2>
+                <p>Creative webpage design using HTML and CSS effects.</p>
+                <a href="Exp No 08.html" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 09</h2>
+                <p>Interactive webpage development and styling concepts.</p>
+                <a href="Exp No 09.html" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 10</h2>
+                <p>Professional Resume webpage using HTML and CSS.</p>
+                <a href="Exp 10 Resume.html" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 11</h2>
+                <p>Advanced webpage project with responsive design.</p>
+                <a href="Exp11/" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 12</h2>
+                <p>Modern UI implementation using HTML and CSS.</p>
+                <a href="Exp12/" class="btn">View Practical</a>
+            </div>
+
+            <div class="card">
+                <h2>Experiment 13</h2>
+                <p>Final practical showcasing complete web development skills.</p>
+                <a href="Exp13/" class="btn">View Practical</a>
+            </div>
+
+        </div>
+
+        <footer>
+            © 2026 Siddhesh Madekar | Web Development Practical Repository
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
